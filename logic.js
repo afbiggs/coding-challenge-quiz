@@ -21,13 +21,18 @@ var sfxWrong = new Audio('assets/sfx/incorrect.wav');
 
 function startQuiz() {
     // hide start screen
-
+    var startScreenEl = document.getElementById('start-screen');
+    startScreenEl.setAttribute('class', 'hide');
+    
     // un-hide questions section
+    questionsEl.removeAttribute('class')
 
     //start timer (high)
-you need to declare a var named timerId. You will also need to use setInterval and clockTick
+    setInterval(clockTick, 1000)
+
 
     //show starting time (high)
+    timerEl.textContent = time;
 
     getQuestion();
 }
@@ -44,8 +49,15 @@ function getQuestion() { //this function is going to get the data from the quest
     choicesEl.innerHTML = ''; //Study this later
 
     // create a for loop that creates the choice elements
-    for (var i = 0; i < currentQuestion.choices.length; i++) {
+    for (var i = 0; i < currentQuestion.choices.length; i++) { 
         // create new button for each choice
+        var choice = currentQuestion.choices[i];
+        var buttonEl = document.createElement('button')
+        buttonEl.setAttribute('class', 'choice')
+        buttonEl.setAttribute('value', choice)
+        buttonEl.textContent = i + 1 + '. ' + choice;
+        choicesEl.appendChild(buttonEl)
+
         //.createElement
         //.setAttribute (set a class="choice")
         //.textContent
@@ -62,10 +74,12 @@ function questionClick(event) {
     }
 
     // check if user guessed right or wrong
-    if (true) { //replace true with a conditional statement that checks if the clicked choice button's value is the same as the questions[currentQuestionIndex]'s answer
+    if (buttonEl.value !== questions[currentQuestionIndex].answer) //replace true with a conditional statement that checks if the clicked choice button's value is the same as the questions[currentQuestionIndex]'s answer
         //incorrect answer scenario
 
         // penalize time
+        time -= 5;
+        if
         // display new time on page
     } else {
         //correct scenario
