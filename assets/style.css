@@ -249,6 +249,257 @@ span {
 
 #userinitials {
     display: none;
+}body {}
+
+h1 {
+    align-content: center;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+span {
+    color:red;
+}
+
+.navigation {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#highScoreLink {
+  display: flex;
+  align-items: flex-end;
+  /* border-style: solid; */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1em;
+}
+
+#highScoreLinkText:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+#timer {
+    /* border-style: solid; */
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1em;
+}
+
+/* .countdown {
+   
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#codingQuizBox {
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#startButton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position:relative;
+   
+}
+#advance {
+    display: none;
+}
+
+#wrongMessage {
+    display: none;
+}
+
+#correctMessage {
+    display: none;
+}
+#wrongMessage2 {
+    display: none;
+}
+
+#correctMessage2 {
+    display: none;
+}
+
+#wrongMessage3 {
+    display: none;
+}
+
+#correctMessage3 {
+    display: none;
+}
+
+#wrongMessage4 {
+    display: none;
+}
+
+#correctMessage4 {
+    display: none;
+}
+
+#wrongMessage5{
+    display: none;
+}
+
+#correctMessage5 {
+    display: none;
+}
+
+.buttonFormat{
+    width: 35%;
+    margin: 5px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.buttonFormat:hover {
+    cursor: pointer;
+    background-color: lightcoral;
+}
+
+#advance1 {
+    display: none;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1em;
+    width: 30%;
+}
+
+#advance2 {
+    display: none;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1em;
+    width: 30%;
+}
+#advance3 {
+    display: none;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1em;
+    width: 30%;
+}
+#advance4 {
+    display: none;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1em;
+    width: 30%;
+}
+
+#advance5 {
+    display: none;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1em;
+    width: 30%;
+}
+
+#next {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+/* this is the format for each question */
+#question1 {
+    display: none;
+    margin-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    border: solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* end formatting for each question - follow the template above */
+
+#question2 {
+    display: none;
+    margin-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    border: solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#question3 {
+    display: none;
+    margin-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    border: solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#question4 {
+    display: none;
+    margin-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    border: solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#question5 {
+    display: none;
+    margin-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    border: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+
+#initials {
+    display: none;
+    flex-direction: column;
+    border: solid;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4em;
+}
+
+#remainingTime {
+    margin: auto;
+    font-size: 40px;
+    color: blue;
+}
+
+#userinitials {
+    display: none;
 }
 
 #submitInitials{
@@ -283,5 +534,8 @@ span {
     margin: auto;
     margin-bottom: 1em;
 }
+
+
+ 
 
 

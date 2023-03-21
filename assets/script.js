@@ -18,11 +18,9 @@ var timer = 90
 var scores = []
 var clockid
 
-// this is where we get scores from local storage, parse them, and assign the stored scores to the global scores value
-// we need to wrap the scores in 31 in an if statement regarding if the storage is not null 
 
 
-// click event calls the function that we will use to start the game. For each eveht that follows, even this, we need an if and else statement to trigger text that comes up and also a deduction in time if applicable. 
+// click event calls the function that we will use to start the game. For each event that follows, even this, we need an if and else statement to trigger text that comes up and also a deduction in time if applicable. 
 document.getElementById("startButton").onclick = function () { startQuiz() };
 function startQuiz() {
   document.getElementById("question1").style.display = "block";
@@ -50,7 +48,7 @@ function wrong() {
   timer = timer - 10;
 }
 
-// END OF QUESTION ONE
+
 // transition script from question 1 to 2 based on advance on click function
 document.getElementById("advance1").onclick = function () { transition() };
 function transition() {
@@ -78,7 +76,7 @@ function wrong2() {
   timer = timer - 10;
 }
 
-// END OF QUESTION 2
+
 // transition to question 3
 document.getElementById("advance2").onclick = function () { transitionTwo() };
 function transitionTwo() {
@@ -106,7 +104,7 @@ function wrong3() {
   timer = timer - 10;
 }
 
-// END OF QUESTION 3
+
 // transition to question 4
 document.getElementById("advance3").onclick = function () { transitionThree() };
 function transitionThree() {
@@ -134,7 +132,7 @@ function wrong4() {
   timer = timer - 10;
 }
 
-// END OF QUESTION 4
+
 // transition to question 5
 document.getElementById("advance4").onclick = function () { transitionFour() };
 function transitionFour() {
@@ -162,7 +160,7 @@ function wrong5() {
   timer = timer - 10;
 }
 
-// END OF QUESTION 5 and other questions
+
 // transition to all done section by clicking advance button
 document.getElementById("advance5").onclick = function () { quizDone() };
 function quizDone() {
@@ -237,18 +235,12 @@ function showScores(displayString) {
   document.getElementById("scoreCard").style.display = "flex";
   document.getElementById("initials").style.display = "none";
 
-  // build score object with initials and score value (use 224 and 225)
-  // next push score object onto the scores array 
-  // we must stringify the scores, because only string can be in local storage
   // string can be put in local storage
   var highScoresStored = document.getElementById("scoreCard");
 
 }
 
 
-
-// this section should reset everything, including the timer to start at 0 again
-// this section needs to incite a complete reset of everything upon the pressing of the "tryAgain" button
 document.getElementById("tryAgain").onclick = function () { home() };
 function home() {
   document.getElementById("codingQuizBox").style.display = "flex";
@@ -270,7 +262,6 @@ document.getElementById("clearScores").onclick = function() {
 localStorage.clear();
 listofInitials.textContent="";
 }
-
 
 
 // if user clicks on "View High Scores" all will vanish except for "scoreCard". 
